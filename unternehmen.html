@@ -4,20 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="apple-itunes-app" content="app-id=6470999822" />
-  <title>Für Unternehmen – Personal und Aushilfen buchen | unicrew</title>
-  <meta name="description" content="uniCREW bietet einen großen Pool an qualifiziertem Personal für Events, Messen, Gastronomie und Einzelhandel im Großraum Hamburg – ohne langfristige Verpflichtungen." />
   <link rel="icon" type="image/png" href="/images/branding/icon2.png" />
   <link rel="apple-touch-icon" href="/images/branding/icon1.png" />
+  <link rel="shortcut icon" href="/favicon.ico" />
   <meta name="theme-color" content="#28B54A" />
+  <!-- Open Graph / social cards -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="unicrew" />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:title" content="Für Unternehmen – Personal und Aushilfen buchen | unicrew" />
-  <meta property="og:description" content="uniCREW bietet einen großen Pool an qualifiziertem Personal für Events, Messen, Gastronomie und Einzelhandel im Großraum Hamburg." />
+  <meta property="og:title" content="Für Unternehmen — unicrew Personaldienstleister" />
+  <meta property="og:description" content="Flexibel, schnell und zuverlässig: unicrew stellt Unternehmen geprüfte Studierende bereit – von Logistik bis Gastronomie. Jetzt Personalanfrage stellen." />
   <meta property="og:url" content="https://www.unicrew.gmbh/unternehmen" />
   <meta property="og:image" content="https://www.unicrew.gmbh/images/branding/OpenGraph-Home.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Für Unternehmen — unicrew Personaldienstleister" />
+  <meta name="twitter:description" content="Flexibel, schnell und zuverlässig: unicrew stellt Unternehmen geprüfte Studierende bereit – von Logistik bis Gastronomie. Jetzt Personalanfrage stellen." />
+  <meta name="twitter:image" content="https://www.unicrew.gmbh/images/branding/OpenGraph-Home.jpg" />
   <link rel="canonical" href="https://www.unicrew.gmbh/unternehmen" />
+  <title>Für Unternehmen — unicrew Personaldienstleister</title>
+  <meta name="description" content="Flexibel, schnell und zuverlässig: unicrew stellt Unternehmen geprüfte Studierende bereit – von Logistik bis Gastronomie. Jetzt Personalanfrage stellen." />
   <script>
     if("scrollRestoration" in history){history.scrollRestoration="manual";}
     (function(){
@@ -41,312 +46,477 @@
       addEventListener('DOMContentLoaded', applyZoom);
     })();
   </script>
-  <script defer src="/_vercel/insights/script.js"></script>
-  <script defer src="/app-banner.js"></script>
   <link rel="stylesheet" href="/fonts/ibm-plex-sans.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.14.0/dist/tabler-icons.min.css" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/branche.css?v=1" />
+  <link rel="stylesheet" href="/css/unternehmen-index.css?v=1" />
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/app-banner.js"></script>
 </head>
 <body>
 
-<!-- ── NAV ── -->
-<nav class="nav" id="main-nav" role="banner">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="unicrew Startseite">
-      <img src="/images/branding/unicrewgreen.svg" alt="unicrew" style="border-radius:0" />
-      <span class="nav-logo-text">uni<span class="nav-logo-works">crew</span></span>
-    </a>
-    <div class="nav-ctas">
-      <div class="nav-dd" id="nav-dd-uw">
-        <button type="button" class="btn btn-s nav-dd-toggle" id="nav-dd-uw-toggle" aria-haspopup="true" aria-expanded="false">Für Studierende <i class="ti ti-chevron-down" aria-hidden="true"></i></button>
-        <div class="nav-dd-menu" role="menu" aria-label="Studierende">
-          <a href="/studierende" role="menuitem"><i class="ti ti-school" aria-hidden="true"></i>Übersicht</a>
-          <a href="/vorteile" role="menuitem"><i class="ti ti-star" aria-hidden="true"></i>Deine Vorteile</a>
-          <a href="https://apply.uniworks.gmbh" target="_blank" rel="noopener" role="menuitem"><i class="ti ti-user-plus" aria-hidden="true"></i>Jetzt registrieren</a>
+  <!-- ── NAV ── -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/images/branding/unicrewgreen.svg" alt="unicrew" style="border-radius:0" />
+        <span class="nav-logo-text">uni<span class="nav-logo-works">crew</span></span>
+      </a>
+      <div class="nav-ctas">
+        <div class="nav-dd" id="nav-dd-uw">
+          <button type="button" class="btn btn-s nav-dd-toggle" id="nav-dd-uw-toggle" aria-haspopup="true" aria-expanded="false">Für Studierende <i class="ti ti-chevron-down" aria-hidden="true"></i></button>
+          <div class="nav-dd-menu" role="menu" aria-label="Studierende">
+            <a href="/studierende" role="menuitem"><i class="ti ti-school" aria-hidden="true"></i>Übersicht</a>
+            <a href="/vorteile" role="menuitem"><i class="ti ti-star" aria-hidden="true"></i>Deine Vorteile</a>
+            <a href="https://apply.uniworks.gmbh" target="_blank" rel="noopener" role="menuitem"><i class="ti ti-user-plus" aria-hidden="true"></i>Jetzt registrieren</a>
+          </div>
+        </div>
+        <div class="nav-dd" id="nav-dd">
+          <button type="button" class="btn btn-p nav-dd-toggle" id="nav-dd-toggle" aria-haspopup="true" aria-expanded="false">
+            Für Unternehmen <i class="ti ti-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="nav-dd-menu" role="menu" aria-label="Unternehmen">
+            <a href="/unternehmen" class="active" role="menuitem"><i class="ti ti-layout-grid" aria-hidden="true"></i>Übersicht</a>
+            <a href="/unternehmen#leistungen" role="menuitem"><i class="ti ti-list-check" aria-hidden="true"></i>Leistungen</a>
+            <a href="/unternehmen#branchen" role="menuitem"><i class="ti ti-building-store" aria-hidden="true"></i>Branchen</a>
+            <a href="/unternehmen#kontakt" role="menuitem"><i class="ti ti-phone" aria-hidden="true"></i>Kontakt</a>
+          </div>
+        </div>
+        <a href="/faq" class="nav-textlink">FAQ</a>
+      </div>
+      <button class="nav-hbg" id="nav-hbg" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mob-overlay" id="mob-overlay">
+    <details class="mob-dd">
+      <summary>Für Studierende <i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
+      <div class="mob-dd-list">
+        <a href="/studierende"><i class="ti ti-school" aria-hidden="true"></i>Übersicht</a>
+        <a href="/vorteile"><i class="ti ti-star" aria-hidden="true"></i>Deine Vorteile</a>
+        <a href="https://apply.uniworks.gmbh" target="_blank" rel="noopener"><i class="ti ti-user-plus" aria-hidden="true"></i>Jetzt registrieren</a>
+      </div>
+    </details>
+    <details class="mob-dd" open>
+      <summary>Für Unternehmen <i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
+      <div class="mob-dd-list">
+        <a href="/unternehmen"><i class="ti ti-layout-grid" aria-hidden="true"></i>Übersicht</a>
+        <a href="/unternehmen#leistungen"><i class="ti ti-list-check" aria-hidden="true"></i>Leistungen</a>
+        <a href="/unternehmen#branchen"><i class="ti ti-building-store" aria-hidden="true"></i>Branchen</a>
+        <a href="/unternehmen#kontakt"><i class="ti ti-phone" aria-hidden="true"></i>Kontakt</a>
+      </div>
+    </details>
+    <a href="/faq">FAQ</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <div class="bhero-outer">
+    <section class="bhero bhero-hub">
+      <div class="bhero-media" style="aspect-ratio:16/7;display:flex;align-items:center;justify-content:center;background:var(--g)">
+        <img src="/images/branding/unicrew.svg" alt="unicrew" style="width:auto;height:62%;object-fit:contain;box-shadow:none;border-radius:0" />
+      </div>
+      <div class="bhero-text">
+        <h1>Persönlich. <em>Maßgeschneidert.</em></h1>
+        <p>Von Service über Events und Catering bis Logistik und Einzelhandel: uniCREW stellt Ihnen flexibel, schnell und zuverlässig geprüfte Studierende bereit, maßgeschneidert auf Ihren Bedarf. Recruiting, Bürokratie, Einsatzplanung und Abrechnung übernehmen wir, Sie gewinnen Zeit und Flexibilität.</p>
+        <div class="bhero-btns">
+          <a href="mailto:info@unicrew.gmbh?subject=Anfrage%20Personal" class="btn btn-p">Personalanfrage stellen</a>
         </div>
       </div>
-      <div class="nav-dd" id="nav-dd">
-        <button type="button" class="btn btn-p nav-dd-toggle" id="nav-dd-toggle" aria-haspopup="true" aria-expanded="false">
-          Für Unternehmen
-          <i class="ti ti-chevron-down" aria-hidden="true"></i>
-        </button>
-        <div class="nav-dd-menu" role="menu" aria-label="Unternehmen">
-          <a href="/unternehmen" role="menuitem"><i class="ti ti-layout-grid" aria-hidden="true"></i>Übersicht</a>
-          <a href="/unternehmen#leistungen" role="menuitem"><i class="ti ti-list-check" aria-hidden="true"></i>Leistungen</a>
-          <a href="/unternehmen#referenzen" role="menuitem"><i class="ti ti-star" aria-hidden="true"></i>Referenzen</a>
-          <a href="/unternehmen#kontakt" role="menuitem"><i class="ti ti-phone" aria-hidden="true"></i>Kontakt</a>
+    </section>
+  </div>
+
+  <!-- ── LEISTUNGEN (what we take off your plate) ── -->
+  <section class="leist" id="leistungen">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Unternehmen gewinnen wertvolle Zeit und Flexibilität.</h2>
+        <p>Sie sagen uns, wen Sie wann und wo brauchen. Den Rest erledigen wir – von der Auswahl bis zur Lohnabrechnung.</p>
+      </div>
+      <div class="leist-grid">
+        <div class="leist-card">
+          <div class="leist-img"><img src="/images/visuals/Recruiting.webp" alt="" loading="lazy" /></div>
+          <div class="leist-body">
+            <h3>Recruiting &amp; Auswahl</h3>
+            <p>Wir finden, prüfen und briefen die passenden Studierenden für Ihren Einsatz.</p>
+          </div>
         </div>
-      </div>
-      <a href="/faq" class="nav-textlink">FAQ</a>
-    </div>
-    <button class="nav-hbg" id="nav-hbg" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- mobile overlay -->
-<div class="mob-overlay" id="mob-overlay" role="dialog" aria-label="Navigation" aria-modal="true">
-  <details class="mob-dd" open>
-    <summary>Für Studierende <i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-    <div class="mob-dd-list">
-      <a href="/studierende"><i class="ti ti-school" aria-hidden="true"></i>Übersicht</a>
-      <a href="/vorteile"><i class="ti ti-star" aria-hidden="true"></i>Deine Vorteile</a>
-      <a href="https://apply.uniworks.gmbh" target="_blank" rel="noopener"><i class="ti ti-user-plus" aria-hidden="true"></i>Jetzt registrieren</a>
-    </div>
-  </details>
-  <details class="mob-dd">
-    <summary>Für Unternehmen <i class="ti ti-chevron-down" aria-hidden="true"></i></summary>
-    <div class="mob-dd-list">
-      <a href="/unternehmen"><i class="ti ti-layout-grid" aria-hidden="true"></i>Übersicht</a>
-      <a href="/unternehmen#leistungen"><i class="ti ti-list-check" aria-hidden="true"></i>Leistungen</a>
-      <a href="/unternehmen#referenzen"><i class="ti ti-star" aria-hidden="true"></i>Referenzen</a>
-      <a href="/unternehmen#kontakt"><i class="ti ti-phone" aria-hidden="true"></i>Kontakt</a>
-    </div>
-  </details>
-  <a href="/faq">FAQ</a>
-</div>
-
-<!-- ── PAGE HERO ── -->
-<header class="page-hero">
-  <div class="wrap">
-    <p class="eyebrow fu">Für Unternehmen</p>
-    <h1 class="fu">Persönlich. <em>Maßgeschneidert.</em></h1>
-    <p class="lead fu">uniCREW bietet einen großen Pool an qualifiziertem Personal, mit dem Sie kurzfristige Belastungsspitzen abfedern können, als auch längerfristig unkompliziert den Bedarf an Arbeitskräften decken, ohne dabei Verpflichtungen eingehen zu müssen. Unsere Erfahrung erstreckt sich über viele Branchen wie zum Beispiel den Servicebereich, Messe- und Eventaufbau, Gastronomie und Einzelhandel. Bei jedem Auftrag legen wir großen Wert auf die individuellen Bedürfnisse unserer Kund:innen, denn wir wissen, wie einzigartig jedes Unternehmen ist.</p>
-    <a href="mailto:info@unicrew.gmbh?subject=Anfrage%20Personal" class="btn btn-p fu"><i class="ti ti-mail" aria-hidden="true"></i> Personalanfrage stellen</a>
-  </div>
-</header>
-
-<!-- ── SERVICES ── -->
-<section class="sec sec-gray" id="leistungen" aria-label="Unsere Leistungen" style="scroll-margin-top:72px">
-  <div class="wrap">
-    <p class="eyebrow fu">Unsere Leistungen</p>
-    <h2 class="sec-h fu">Gewinnen Sie wertvolle Zeit und Flexibilität.</h2>
-    <p class="sec-sub fu">Entdecken Sie, wie uniCREW Ihnen Arbeitsschritte abnimmt und Ihr Alltag federleicht wird.</p>
-    <div class="svc-grid">
-      <div class="svc fu">
-        <img src="/images/icons/personal.svg" alt="" />
-        <h3>Recruiting &amp; Auswahl</h3>
-        <p>Wir übernehmen für Sie die Personalbeschaffung, führen mit jedem Studierenden ein persönliches Interview und treffen individuell eine Auswahl der bestgeeigneten Kandidat:innen.</p>
-      </div>
-      <div class="svc fu" style="transition-delay:.06s">
-        <img src="/images/icons/papier.svg" alt="" />
-        <h3>Bürokratie</h3>
-        <p>Gönnen Sie Ihrem Aktenschrank eine Auszeit. uniCREW kümmert sich darum, dass alle notwendigen Dokumente für eine ordnungsgemäße Verwaltung des Personals vorliegen.</p>
-      </div>
-      <div class="svc fu" style="transition-delay:.12s">
-        <img src="/images/icons/planung.svg" alt="" />
-        <h3>Einsatzplanung</h3>
-        <p>Sie nennen uns Ihren Bedarf und wir liefern ab. Teilen Sie uns einfach mit, wie viele Personen Sie zu welcher Zeit an welchem Ort benötigen. Wir übernehmen die Planung und sorgen dafür, dass alle zur rechten Zeit am rechten Ort sind.</p>
-      </div>
-      <div class="svc fu" style="transition-delay:.18s">
-        <img src="/images/icons/zeit.svg" alt="" />
-        <h3>Zeiterfassung</h3>
-        <p>Über die uniCREW App werden künftig alle Arbeits- sowie Pausenzeiten erfasst. Das bedeutet für Sie weniger Komplexität, da Sie keine Papierlisten führen oder das Personal in Ihr Zeiterfassungssystem integrieren müssen.</p>
-      </div>
-      <div class="svc fu" style="transition-delay:.24s">
-        <img src="/images/icons/euro.svg" alt="" />
-        <h3>Lohn &amp; Gehalt</h3>
-        <p>Am Ende des Monats sorgen wir dafür, dass alle uniworker ihr Gehalt rechtzeitig bekommen sowie die damit verbundene Lohn- und Gehaltsabrechnung. Damit Sie sich um Ihr Unternehmen kümmern können.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── REFERENZEN ── -->
-<section class="refs" id="referenzen" aria-label="Referenzen" style="scroll-margin-top:72px">
-  <div class="refs-head">
-    <div>
-      <p class="eyebrow fu">Referenzen</p>
-      <h2 class="sec-h fu" style="margin-bottom:0">Referenzen, die für sich sprechen.</h2>
-    </div>
-    <div class="refs-nav fu">
-      <button type="button" data-scroll-target="refs-track" data-prev aria-label="Zurück"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
-      <button type="button" data-scroll-target="refs-track" aria-label="Weiter"><i class="ti ti-arrow-right" aria-hidden="true"></i></button>
-    </div>
-  </div>
-  <div class="refs-track" id="refs-track">
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/streckenposten.jpg" alt="Einsatz während der UEFA EURO 2024" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Promotion</span>
-        <h3>Anpfiff.</h3>
-        <p>Während der UEFA EURO 2024 haben wir in Zusammenarbeit mit einer renommierten Marketingagentur in sieben Städten über 250 Personen bereitgestellt, die Fans in den verschiedenen Fan-Zonen und Stadien unterstützt haben. Gemeinsam haben wir so eine unvergessliche Atmosphäre für Fans aus aller Welt geschaffen!</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/buehnenaufbau.jpg" alt="Bühnenaufbau für Adele in München" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">StageHands &amp; Catering</span>
-        <h3>Hello…</h3>
-        <p>Über 100 uniworker halfen beim Auf- und Abbau der Außenarena für Adele in München und waren auch während der Konzerte täglich im Einsatz, um über 700.000 Menschen ein einzigartiges Erlebnis zu ermöglichen.</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/catering.jpg" alt="Catering an Schulen" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Catering</span>
-        <h3>Hungrig?</h3>
-        <p>In enger Zusammenarbeit mit einem Cateringunternehmen liefern und servieren wir an mehreren Schulen täglich Essen. Mit uniworks fallen während der Schulferien keine Personalkosten an, ein großer Vorteil gegenüber einer Festanstellung, der ganz nebenbei auch noch bares Geld spart. Da schmeckt selbst der Grünkohl.</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/stagehands.jpg" alt="Stagehands bei AC/DC" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">StageHands</span>
-        <h3>Unter Spannung</h3>
-        <p>uniworks durfte AC/DC auf ihrer Deutschlandtour an drei Standorten begleiten. In München, Nürnberg und Hockenheim haben wir mit unserem Personal beim Auf- und Abbau der Bühnentechnik unterstützt.</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/fruehstuecksservice.jpg" alt="Frühstücksservice im Hotel" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Hotellerie</span>
-        <h3>Guten Morgen!</h3>
-        <p>Darf es ein Croissant oder ein frisch gepresster Orangensaft sein? Jeden Morgen stehen uniworker besonders früh auf, um Hotels deutschlandweit vom Frühstücksbuffet bis zur Galaveranstaltung zu unterstützen.</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/messeaufbau.jpg" alt="Messeeinsatz" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Hostess / Host</span>
-        <h3>Herzlich willkommen</h3>
-        <p>In Deutschlands Messe-Städten übernehmen wir sorgsam die Ticketkontrollen, stehen Unternehmen beim Bewerben ihrer Produkte zur Seite und sorgen stets dafür, dass sich alle willkommen fühlen.</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/ausschank.jpg" alt="Ausschank im Biergarten" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Gastronomie</span>
-        <h3>O'zapft</h3>
-        <p>Servus, als Münchner Unternehmen liegt es uns natürlich besonders am Herzen, unsere geliebten Biergärten mit uniworkern zu unterstützen, egal ob im Service, am Zapfhahn oder an der Kasse. Prost!</p>
-      </div>
-    </article>
-    <article class="ref-card">
-      <div class="ref-card-img"><img src="/images/work/supermarkt-neueroeffnung.jpg" alt="Supermarkt-Neueröffnung" loading="lazy" /></div>
-      <div class="ref-card-body">
-        <span class="ref-tag">Einzelhandel</span>
-        <h3>Schaum-party?</h3>
-        <p>Unsere Mitarbeitenden waren bereits bei über 200 Supermarkt-Neueröffnungen deutschlandweit im Einsatz. Wir stellen den Champagner kalt und aktualisieren die Preisschilder, noch bevor die Tore öffnen.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ── VIELFÄLTIG VERTRETEN ── -->
-<section class="sec" aria-label="Vielfältig vertreten">
-  <div class="wrap center">
-    <p class="eyebrow fu">Branchen</p>
-    <h2 class="sec-h fu">Vielfältig vertreten.</h2>
-    <div class="branchen-grid">
-      <div class="branche fu"><img src="/images/icons/gastro.svg" alt="" /><h3>Catering</h3></div>
-      <div class="branche fu" style="transition-delay:.07s"><img src="/images/icons/tool.svg" alt="" /><h3>Stagehands</h3></div>
-      <div class="branche fu" style="transition-delay:.14s"><img src="/images/icons/logistik.svg" alt="" /><h3>Logistik</h3></div>
-      <div class="branche fu" style="transition-delay:.21s"><img src="/images/icons/promo.svg" alt="" /><h3>Promotion</h3></div>
-    </div>
-  </div>
-</section>
-
-<!-- ── STATS ── -->
-<section class="stats" aria-label="Kennzahlen">
-  <div class="stats-inner">
-    <div class="stat-v fu">5.000+ Studierende</div>
-    <p class="stat-l fu">Mittlerweile haben sich deutschlandweit mehr als 5.000 Studierende für uniworks entschieden.</p>
-  </div>
-</section>
-
-<!-- ── CTA ── -->
-<section class="sec" aria-label="Personalanfrage">
-  <div class="wrap center">
-    <h2 class="sec-h fu">Senden Sie uns Ihre Personalanfrage.</h2>
-    <p class="sec-sub fu">Teilen Sie uns mit, wie viel Personal Sie wann und wo benötigen und wir melden uns zeitnah bei Ihnen mit einem Angebot, das Ihre Wünsche berücksichtigt.</p>
-    <a href="mailto:info@unicrew.gmbh?subject=Anfrage%20Personal" class="btn btn-p fu" style="margin-top:28px"><i class="ti ti-mail" aria-hidden="true"></i> Personalanfrage stellen</a>
-  </div>
-</section>
-
-<!-- ── KONTAKT ── -->
-<section class="sec sec-gray" id="kontakt" aria-label="Ansprechpartner" style="scroll-margin-top:72px">
-  <div class="wrap center">
-    <p class="eyebrow fu">Ihr Ansprechpartner</p>
-    <h2 class="sec-h fu">Sprechen Sie mit uns.</h2>
-    <div class="contact-card fu" style="text-align:left">
-      <div class="contact-card-img"><img src="/images/branding/moritz-lange.jpg" alt="Moritz Lange" loading="lazy" /></div>
-      <div class="contact-card-body">
-        <h3>Moritz Lange</h3>
-        <p class="contact-role">Geschäftsführender Gesellschafter</p>
-        <p class="contact-quote">„Als Geschäftsführer ist mir der persönliche Kontakt zu meinen Kunden besonders wichtig, deswegen bleibe ich auch nach dem Erstkontakt Ihr persönlicher Ansprechpartner.“</p>
-        <div class="contact-lines">
-          <a href="mailto:moritz@uniworks.gmbh"><i class="ti ti-mail" aria-hidden="true"></i> moritz@uniworks.gmbh</a>
-          <a href="tel:+491749359156"><i class="ti ti-phone" aria-hidden="true"></i> 0174 9359156</a>
+        <div class="leist-card">
+          <div class="leist-img"><img src="/images/visuals/Buerokratie.webp" alt="" loading="lazy" /></div>
+          <div class="leist-body">
+            <h3>Bürokratie</h3>
+            <p>Verträge, Anmeldungen und Papierkram übernehmen wir vollständig für Sie.</p>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
-          <img src="/images/branding/unicrewgreen.svg" alt="" style="width:32px;height:32px" />
-          <h3>unicrew</h3>
+        <div class="leist-card">
+          <div class="leist-img"><img src="/images/visuals/Einsatzplanung.webp" alt="" loading="lazy" /></div>
+          <div class="leist-body">
+            <h3>Einsatzplanung</h3>
+            <p>Schichten, Standorte und kurzfristige Änderungen koordinieren wir zuverlässig.</p>
+          </div>
         </div>
-        <p>Ihr Spezialist für Eventpersonal im Großraum Hamburg — wir verbinden Unternehmen mit motivierten Studierenden.</p>
-        <div class="footer-social">
-          <a href="https://wa.me/494060943177" class="foot-social-a" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-            <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:info@unicrew.gmbh" class="foot-social-a" aria-label="E-Mail">
-            <i class="ti ti-mail" aria-hidden="true"></i>
-          </a>
+        <div class="leist-card">
+          <div class="leist-img"><img src="/images/visuals/Zeitplanung.webp" alt="" loading="lazy" /></div>
+          <div class="leist-body">
+            <h3>Zeiterfassung</h3>
+            <p>Digitale Stundenerfassung – transparent, nachvollziehbar und papierlos.</p>
+          </div>
         </div>
-        <div class="footer-app">
-          <div class="footer-app-row">
-            <img src="/images/branding/AppleStoreIcon.webp" alt="uniworks App" class="footer-app-icon" width="46" height="46" />
-            <a href="https://apps.apple.com/de/app/uniworks/id6470999822" class="footer-app-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store"><img src="/images/logos/AppStore.svg" alt="Download on the App Store" /></a>
-            <a href="https://play.google.com/store/apps/details?id=gmbh.uniworks.apps&hl=en" class="footer-app-badge" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play"><img src="/images/logos/PlayStore.svg" alt="Get it on Google Play" /></a>
+        <div class="leist-card">
+          <div class="leist-img"><img src="/images/visuals/Zahlung.webp" alt="" loading="lazy" /></div>
+          <div class="leist-body">
+            <h3>Lohn &amp; Gehalt</h3>
+            <p>Abrechnung, Sozialabgaben und Auszahlung laufen komplett über uns.</p>
           </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Plattform</h4>
-        <ul>
-          <li><a href="/studierende">Für Studierende</a></li>
-          <li><a href="/unternehmen">Für Unternehmen</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Studierende</h4>
-        <ul>
-          <li><a href="/studierende#schichten">Schichten</a></li>
-          <li><a href="/studierende#bewerbung">Bewerbungsprozess</a></li>
-          <li><a href="/vorteile">Deine Vorteile</a></li>
-          <li><a href="/faq">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Unternehmen</h4>
-        <ul>
-          <li><a href="/unternehmen#kontakt">Kontakt</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/impressum">Impressum</a></li>
-          <li><a href="/datenschutz">Datenschutz</a></li>
-          <li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="footer-bottom">
-      <span>Copyright © 2026 unicrew GmbH. Alle Rechte vorbehalten.</span>
-      <div class="footer-bottom-links">
-        <a href="/impressum">Impressum</a>
-        <a href="/datenschutz">Datenschutz</a>
-      </div>
-    </div>
-  </div>
-</footer>
+  </section>
 
-<script src="/js/main.js" defer></script>
+  <!-- ── REFERENCES (client logos, auto-scrolling marquee) ── -->
+  <section class="refs">
+    <h2>Vertrauen von Marken in ganz Deutschland.</h2>
+    <div class="refs-marquee">
+      <div class="refs-row">
+        <div class="refs-track refs-track-left">
+          <img src="/images/logos/JYSK.webp" alt="JYSK" decoding="async" />
+          <img src="/images/logos/Raeder.webp" alt="Räder" decoding="async" />
+          <img src="/images/logos/Rewe.webp" alt="REWE" decoding="async" />
+          <img src="/images/logos/Doco.webp" alt="Do & Co" decoding="async" />
+          <img src="/images/logos/Edeka.webp" alt="EDEKA" decoding="async" />
+          <img src="/images/logos/Driver.webp" alt="Driver" decoding="async" />
+          <img src="/images/logos/mTU.webp" alt="MTU" decoding="async" />
+          <img src="/images/logos/MBS.webp" alt="MBS" decoding="async" />
+          <img src="/images/logos/promotion/Volvo.webp" alt="Volvo" decoding="async" />
+          <img src="/images/logos/Uber.webp" alt="Uber" decoding="async" />
+          <!-- duplicate for seamless loop -->
+          <img src="/images/logos/JYSK.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Raeder.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Rewe.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Doco.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Edeka.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Driver.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/mTU.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/MBS.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/promotion/Volvo.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Uber.webp" alt="" aria-hidden="true" decoding="async" />
+        </div>
+      </div>
+      <div class="refs-row">
+        <div class="refs-track refs-track-right">
+          <img src="/images/logos/Lidl.webp" alt="Lidl" decoding="async" />
+          <img src="/images/logos/Penny.webp" alt="Penny" decoding="async" />
+          <img src="/images/logos/gastronomie/Hotel.webp" alt="Hotel" decoding="async" />
+          <img src="/images/logos/Elements.webp" alt="Elements" decoding="async" />
+          <img src="/images/logos/Kofl.webp" alt="KOFL" decoding="async" />
+          <img src="/images/logos/promotion/BAT.webp" alt="BAT" decoding="async" />
+          <img src="/images/logos/Groblgastro.webp" alt="Gröbl Gastro" decoding="async" />
+          <img src="/images/logos/gastronomie/Blgastro.webp" alt="BL Gastro" decoding="async" />
+          <img src="/images/logos/Gastronomiemagazin.webp" alt="Gastronomiemagazin" decoding="async" />
+          <img src="/images/logos/gastronomie/Schulverpflegung.webp" alt="Schulverpflegung" decoding="async" />
+          <!-- duplicate for seamless loop -->
+          <img src="/images/logos/Lidl.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Penny.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/gastronomie/Hotel.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Elements.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Kofl.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/promotion/BAT.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Groblgastro.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/gastronomie/Blgastro.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/Gastronomiemagazin.webp" alt="" aria-hidden="true" decoding="async" />
+          <img src="/images/logos/gastronomie/Schulverpflegung.webp" alt="" aria-hidden="true" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BRANCHEN grid ── -->
+  <section class="branchen" id="branchen">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Personal für Ihre Branche.</h2>
+        <p>Wählen Sie Ihren Bereich und stellen Sie in wenigen Schritten Ihre Personalanfrage.</p>
+      </div>
+      <div class="branchen-grid">
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Logistik" class="branche-card">
+          <img src="/images/visuals/Logistik.jpeg" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Logistik</h3>
+            <p>Lagerhelfer:innen, Staplerfahrer:innen und Crewchiefs für reibungslose Abläufe.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Event" class="branche-card">
+          <img src="/images/visuals/AdeleMesse.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Event</h3>
+            <p>Stagehands, Auf- und Abbau sowie Einlass- und Garderobenpersonal.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Catering" class="branche-card">
+          <img src="/images/visuals/Catering.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Catering</h3>
+            <p>Servicekräfte, Küchenhilfen und Runner:innen für volle Häuser.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Einzelhandel" class="branche-card">
+          <img src="/images/visuals/Einzelhandel.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Einzelhandel</h3>
+            <p>Verkäufer:innen, Kassierer:innen und Einräumhilfen für Stoßzeiten.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Gastronomie%20%26%20Hotellerie" class="branche-card">
+          <img src="/images/visuals/GastronomieHotellerie.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Gastronomie &amp; Hotellerie</h3>
+            <p>Servicekräfte, Barkeeper:innen und Hotelhilfen mit Gespür fürs Gastgeben.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20Promotion" class="branche-card">
+          <img src="/images/visuals/Promotion.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Promotion</h3>
+            <p>Promoter:innen, Brand Ambassadors und Hostessen für Ihre Marke.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <a href="mailto:info@unicrew.gmbh?subject=Personalanfrage%20B%C3%BCro" class="branche-card">
+          <img src="/images/visuals/Buero.webp" alt="" class="branche-card-img" loading="lazy" />
+          <div class="branche-card-overlay"></div>
+          <div class="branche-card-body">
+            <h3>Büro</h3>
+            <p>Studentische Bürokräfte für Empfang, Back-Office und Projektunterstützung.</p>
+            <span class="branche-more">Personal anfragen <i class="ti ti-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COVERAGE ── -->
+  <section class="cover">
+    <div class="wrap">
+      <h2>Im Großraum Hamburg für Sie vertreten.</h2>
+      <p class="cover-lead">Egal ob Innenstadt oder Umland – unser Netzwerk aus motivierten Studierenden ist im gesamten Großraum Hamburg für Sie im Einsatz.</p>
+      <div class="cover-stat">5.000+</div>
+      <div class="cover-stat-lbl">Studierende im Netzwerk</div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ── -->
+  <section class="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Häufige Fragen.</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Welche Art von Personalbedarf kann ich über unicrew decken? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">Mit unicrew können Sie sowohl kurzfristige Belastungsspitzen abfedern als auch längerfristigen Personalbedarf decken. Wir überlassen Ihnen Aushilfskräfte für einzelne Schichten oder mehrere Wochen und Monate. Unsere uniworker stehen Ihnen sowohl im gewerblichen / kaufmännischen als auch privaten Bereich zur Verfügung. Dabei decken wir ein breites Spektrum an Tätigkeiten ab: von einfachen Aufgaben ohne große Einarbeitung (z.&nbsp;B. als Lagerist:in, Verkäufer:in, Umzugshelfer:in) bis hin zu anspruchsvolleren Positionen wie z.&nbsp;B. Kellner:in oder Kassierer:in.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Wie schnell kann ich Personal buchen? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">In der Regel ist eine Zuteilung ab einer Vorlaufzeit von 24&nbsp;Stunden möglich, in Einzelfällen (beispielsweise bei Anschlussbuchungen) sogar noch kurzfristiger.</div>
+        </details>
+        <details class="faq-item">
+          <summary>In welchen Regionen ist unicrew vertreten? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">unicrew ist Ihr Spezialist für Eventpersonal im Großraum Hamburg. Über unsere Partnerfirma uniworks sind wir darüber hinaus deutschlandweit vertreten. Sollten Sie Unterstützung in einer Region benötigen, die nicht aufgelistet ist, zögern Sie nicht, uns zu kontaktieren. Unsere Erfahrung zeigt, dass dies mit etwas Vorlaufzeit ebenfalls realisierbar ist.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Welche Fixkosten erwarten mich? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">Keine. Bei unicrew gibt es weder monatliche Gebühren noch eine monatliche Mindestabnahme. Sie zahlen ausschließlich für die tatsächlich geleisteten Arbeitsstunden der uniworker bzw. bei einer Absage Ihrerseits innerhalb von 48&nbsp;Stunden vor vereinbartem Arbeitsbeginn.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Ich bin sehr zufrieden mit meinem uniworker – bekomme ich grundsätzlich denselben / dieselbe zugeteilt? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">Um Prozesse zu vereinfachen und unnötige Einarbeitungszeit zu vermeiden, versuchen wir grundsätzlich, Ihre Präferenzen zu berücksichtigen. Sie erhöhen die Wahrscheinlichkeit einer erneuten Zuteilung, indem Sie uns Rückmeldung über Ihre Zufriedenheit geben.</div>
+        </details>
+        <details class="faq-item">
+          <summary>Kann ich meine Buchung stornieren? <i class="ti ti-plus" aria-hidden="true"></i></summary>
+          <div class="faq-a">Im Geschäftsleben kann es immer auch zu kurzfristigen Änderungen kommen und Sie können prinzipiell jede getätigte Buchung absagen. Bitte haben Sie Verständnis dafür, dass bei einer Absage innerhalb von 48&nbsp;Stunden vor vereinbartem Arbeitsbeginn die jeweilige Schicht unabhängig von der Inanspruchnahme in Rechnung gestellt wird.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact" id="kontakt">
+    <div class="wrap">
+      <h2 class="contact-h">Sprechen Sie mit uns.</h2>
+      <div class="contact-card">
+        <div class="contact-photo">
+          <img src="/images/membersandnews/Moritz.webp" alt="Moritz Lange, Geschäftsführender Gesellschafter" loading="lazy" />
+        </div>
+        <div class="contact-info">
+          <h3>Moritz Lange</h3>
+          <p class="contact-role">Geschäftsführender Gesellschafter</p>
+          <p>Als Geschäftsführer ist mir der persönliche Kontakt zu meinen Kunden besonders wichtig, deswegen bleibe ich auch nach dem Erstkontakt Ihr persönlicher Ansprechpartner.</p>
+          <div class="contact-btns">
+            <a href="mailto:moritz@uniworks.gmbh" class="contact-pill"><i class="ti ti-mail" aria-hidden="true"></i>moritz@uniworks.gmbh</a>
+            <a href="tel:+491749359156" class="contact-pill"><i class="ti ti-phone" aria-hidden="true"></i>0174 9359156</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PARTNER MARQUEE ── -->
+  <section class="partners">
+    <div class="wrap">
+      <p class="partners-lbl">Unsere Partner &amp; Kunden</p>
+    </div>
+    <div class="ptrs-track-wrap" aria-hidden="true">
+      <div class="ptrs-track">
+        <img src="/images/logos/Edeka.webp" alt="Edeka" class="ptr-logo" />
+        <img src="/images/logos/Rewe.webp" alt="Rewe" class="ptr-logo" />
+        <img src="/images/logos/Penny.webp" alt="Penny" class="ptr-logo" />
+        <img src="/images/logos/Lidl.webp" alt="Lidl" class="ptr-logo" />
+        <img src="/images/logos/JYSK.webp" alt="JYSK" class="ptr-logo" />
+        <img src="/images/logos/Uber.webp" alt="Uber" class="ptr-logo" />
+        <img src="/images/logos/Doco.webp" alt="Doco" class="ptr-logo" />
+        <img src="/images/logos/Driver.webp" alt="Driver" class="ptr-logo" />
+        <img src="/images/logos/Elements.webp" alt="Elements" class="ptr-logo" />
+        <img src="/images/logos/concerts/Coldplay.webp" alt="Coldplay" class="ptr-logo" />
+        <img src="/images/logos/concerts/TaylorSwift.webp" alt="Taylor Swift" class="ptr-logo" />
+        <img src="/images/logos/concerts/EdSheerna.webp" alt="Ed Sheeran" class="ptr-logo" />
+        <img src="/images/logos/concerts/ImagineDragons.webp" alt="Imagine Dragons" class="ptr-logo" />
+        <img src="/images/logos/concerts/Adelelogo.webp" alt="Adele" class="ptr-logo" />
+        <img src="/images/logos/concerts/ChrisBrown.webp" alt="Chris Brown" class="ptr-logo" />
+        <img src="/images/logos/concerts/Hurricane.webp" alt="Hurricane Festival" class="ptr-logo" />
+        <img src="/images/logos/concerts/RockImPark.svg" alt="Rock im Park" class="ptr-logo" />
+        <img src="/images/logos/concerts/FeteDeLaMusique.webp" alt="Fête de la Musique" class="ptr-logo" />
+        <img src="/images/logos/concerts/PalastBerlin.webp" alt="Palast Berlin" class="ptr-logo" />
+        <img src="/images/logos/promotion/Google.webp" alt="Google" class="ptr-logo" />
+        <img src="/images/logos/promotion/Sumup.webp" alt="SumUp" class="ptr-logo" />
+        <img src="/images/logos/promotion/Nucao.webp" alt="nucao" class="ptr-logo" />
+        <img src="/images/logos/promotion/Volvo.webp" alt="Volvo" class="ptr-logo" />
+        <img src="/images/logos/promotion/Vonovia.webp" alt="Vonovia" class="ptr-logo" />
+        <!-- duplicate for seamless loop -->
+        <img src="/images/logos/Edeka.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Rewe.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Penny.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Lidl.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/JYSK.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Uber.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Doco.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Driver.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/Elements.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/Coldplay.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/TaylorSwift.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/EdSheerna.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/ImagineDragons.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/Adelelogo.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/ChrisBrown.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/Hurricane.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/RockImPark.svg" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/FeteDeLaMusique.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/concerts/PalastBerlin.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/promotion/Google.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/promotion/Sumup.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/promotion/Nucao.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/promotion/Volvo.webp" alt="" class="ptr-logo" />
+        <img src="/images/logos/promotion/Vonovia.webp" alt="" class="ptr-logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px">
+            <img src="/images/branding/unicrewgreen.svg" alt="" style="width:32px;height:32px" />
+            <h3>unicrew</h3>
+          </div>
+          <p>Ihr Spezialist für Eventpersonal im Großraum Hamburg — wir verbinden Unternehmen mit motivierten Studierenden.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/494060943177" class="foot-social-a" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:info@unicrew.gmbh" class="foot-social-a" aria-label="E-Mail">
+              <i class="ti ti-mail" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="footer-app">
+            <div class="footer-app-row">
+              <img src="/images/branding/AppleStoreIcon.webp" alt="uniworks App" class="footer-app-icon" width="46" height="46" />
+              <a href="https://apps.apple.com/de/app/uniworks/id6470999822" class="footer-app-badge" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store"><img src="/images/logos/AppStore.svg" alt="Download on the App Store" /></a>
+              <a href="https://play.google.com/store/apps/details?id=gmbh.uniworks.apps&hl=en" class="footer-app-badge" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play"><img src="/images/logos/PlayStore.svg" alt="Get it on Google Play" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Plattform</h4>
+          <ul>
+            <li><a href="/studierende">Für Studierende</a></li>
+            <li><a href="/unternehmen">Für Unternehmen</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studierende</h4>
+          <ul>
+            <li><a href="/studierende#schichten">Schichten</a></li>
+            <li><a href="/studierende#bewerbung">Bewerbungsprozess</a></li>
+            <li><a href="/vorteile">Deine Vorteile</a></li>
+            <li><a href="/faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Unternehmen</h4>
+          <ul>
+            <li><a href="/unternehmen#kontakt">Kontakt</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+            <li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Copyright © 2026 unicrew GmbH. Alle Rechte vorbehalten.</span>
+        <div class="footer-bottom-links">
+          <a href="/impressum">Impressum</a>
+          <a href="/datenschutz">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+  <script>
+    // Start the brand marquee only once its logos have loaded, so the track
+    // width is known and the scroll doesn't render off-centre on first paint.
+    (function () {
+      var marquee = document.querySelector('.refs-marquee');
+      if (!marquee) return;
+      var imgs = Array.prototype.slice.call(marquee.querySelectorAll('img'));
+      var ready = function () { marquee.classList.add('refs-ready'); };
+      var pending = imgs.filter(function (img) { return !img.complete; }).length;
+      if (!pending) { ready(); return; }
+      var done = function () { if (--pending <= 0) ready(); };
+      imgs.forEach(function (img) {
+        if (img.complete) return;
+        img.addEventListener('load', done, { once: true });
+        img.addEventListener('error', done, { once: true });
+      });
+      // Safety net: never leave the marquee static if an image stalls.
+      window.addEventListener('load', ready);
+      setTimeout(ready, 3000);
+    })();
+  </script>
 </body>
 </html>
