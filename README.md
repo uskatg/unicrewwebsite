@@ -15,7 +15,8 @@ Redesign based on the [uniworks.gmbh](https://www.uniworks.gmbh) design language
 ```
 index.html                 Landing page (hero, Branchen, photo carousel, audience split, CTA)
 unternehmen.html           B2B: services, references, stats, contact (Moritz Lange)
-studierende.html           B2C: intro, 16 € Mindestlohn, app features, job categories
+studierende.html           B2C: 1:1 port of uniworks /studierende (phone hero, shift wall,
+                           16 € banner, app carousel, how-it-works, FAQ, partners)
 vorteile.html              unicrew Member vs. unicrew Plus benefits
 faq.html                   FAQ pointer to uniworks + WhatsApp/e-mail contact
 impressum.html             Legal notice
@@ -23,7 +24,8 @@ datenschutz.html           Privacy policy
 nutzungsbedingungen.html   App terms of use
 404.html                   Not-found page
 css/style.css              Shared design system (brand green #28B54A)
-js/main.js                 Nav shadow, mobile menu, fade-up animations, carousel arrows
+js/main.js                 Nav shadow, mobile menu, active links, fade-up, carousel arrows
+app-banner.js              Smart-app-banner (ported from uniworks)
 images/                    Brand assets, work photos, app screenshots, icons
 fonts/                     IBM Plex Sans woff2 + @font-face CSS
 ```
