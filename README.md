@@ -32,13 +32,13 @@ fonts/                     IBM Plex Sans woff2 + @font-face CSS
 
 ## Local preview
 
-Open any `.html` file directly in a browser, or run a local server:
-
 ```sh
-python3 -m http.server 8000
+python3 serve.py 8000
 ```
 
-(Root-absolute paths like `/css/style.css` require the server variant.)
+`serve.py` mimics Vercel's `cleanUrls: true`, so links like `/studierende`
+resolve to `studierende.html` exactly as in production (plain
+`python3 -m http.server` would 404 on them).
 
 ## Deployment
 
