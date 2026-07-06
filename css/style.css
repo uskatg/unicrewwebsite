@@ -149,7 +149,13 @@ h1,h2,h3,h4{color:var(--black);letter-spacing:-.02em;line-height:1.15}
 .split-img-contain img{width:auto;max-width:100%;max-height:520px;object-fit:contain;filter:drop-shadow(0 24px 48px rgba(0,0,0,.18))}
 .split-text .btn{margin-top:28px}
 .split-rev .split-img{order:2}
-@media(max-width:900px){.split,.split-rev{grid-template-columns:1fr;gap:32px}.split-rev .split-img{order:0}.split+.split{margin-top:64px}}
+/* three-phone showcase (same media as the /studierende hero) */
+.split-phones{position:relative;display:flex;justify-content:center;align-items:center;gap:12px}
+.split-rev .split-phones{order:2}
+.split-phones::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(46% 46% at 50% 50%,rgba(40,181,74,.22),transparent 72%);filter:blur(10px)}
+.sp-phone{position:relative;z-index:2;width:33%;max-width:210px;display:block;filter:drop-shadow(0 0 22px rgba(40,181,74,.40)) drop-shadow(0 18px 38px rgba(40,181,74,.20))}
+.sp-phone:nth-of-type(2){z-index:3}
+@media(max-width:900px){.split,.split-rev{grid-template-columns:1fr;gap:32px}.split-rev .split-img,.split-rev .split-phones{order:0}.split+.split{margin-top:64px}.sp-phone{max-width:none}.sp-phone:nth-of-type(2){width:52%;max-width:240px}.sp-phone:nth-of-type(1),.sp-phone:nth-of-type(3){width:26%}}
 
 /* ── STATS BAND ── */
 .stats{background:linear-gradient(90deg,var(--g) 0%,#5BC878 100%);padding:64px 0}
