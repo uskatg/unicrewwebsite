@@ -1,4 +1,4 @@
-/* uniworks smart app banner — iPhone fallback for non-Safari browsers.
+/* unicrew smart app banner — iPhone fallback for non-Safari browsers.
    Safari shows the native Smart App Banner via the apple-itunes-app meta tag;
    this covers Chrome, Firefox, Edge and in-app browsers on iPhone, which
    ignore that tag. Intentionally no localStorage/sessionStorage: the banner
@@ -14,8 +14,8 @@
     !/CriOS|FxiOS|EdgiOS|OPiOS|OPT\/|DuckDuckGo|GSA\/|Instagram|FBAN|FBAV|Line\//.test(ua);
   if (isSafari) return;
 
-  var APP_URL = 'https://apps.apple.com/de/app/uniworks/id6470999822?l=en-GB';
-  var ICON = '/images/branding/AppIcon.webp';
+  var APP_URL = 'https://apps.apple.com/de/app/unicrew/id6756647797?l=en-GB';
+  var ICON = '/images/branding/icon1.png';
   var en = location.pathname === '/en' || location.pathname.indexOf('/en/') === 0;
   var t = en
     ? { sub: 'Flexible jobs for students', cta: 'Get', close: 'Close' }
@@ -35,9 +35,9 @@
       '#uw-app-banner .uwb-txt{display:flex;flex-direction:column;line-height:1.25;min-width:0;flex:1}' +
       '#uw-app-banner .uwb-title{font-size:15px;font-weight:700;color:#0d1b12}' +
       '#uw-app-banner .uwb-sub{font-size:12px;color:#5b6b60;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}' +
-      '#uw-app-banner .uwb-cta{flex-shrink:0;background:#2ab54a;color:#fff;font-size:14px;font-weight:700;' +
+      '#uw-app-banner .uwb-cta{flex-shrink:0;background:#28B54A;color:#fff;font-size:14px;font-weight:700;' +
       'text-decoration:none;padding:8px 18px;border-radius:999px}' +
-      '#uw-app-banner .uwb-cta:active{background:#21993d}' +
+      '#uw-app-banner .uwb-cta:active{background:#229A3F}' +
       '#uw-app-banner .uwb-x{flex-shrink:0;background:none;border:0;padding:6px;margin-right:-4px;color:#8a978e;' +
       'font-size:0;line-height:0;cursor:pointer}' +
       '#uw-app-banner .uwb-x svg{width:18px;height:18px;display:block}';
@@ -46,10 +46,10 @@
     var b = document.createElement('div');
     b.id = 'uw-app-banner';
     b.setAttribute('role', 'region');
-    b.setAttribute('aria-label', 'uniworks App');
+    b.setAttribute('aria-label', 'unicrew App');
     b.innerHTML =
       '<img class="uwb-icon" src="' + ICON + '" alt="" />' +
-      '<span class="uwb-txt"><span class="uwb-title">uniworks</span><span class="uwb-sub">' + t.sub + '</span></span>' +
+      '<span class="uwb-txt"><span class="uwb-title">unicrew</span><span class="uwb-sub">' + t.sub + '</span></span>' +
       '<a class="uwb-cta" href="' + APP_URL + '" rel="noopener">' + t.cta + '</a>' +
       '<button class="uwb-x" type="button" aria-label="' + t.close + '">' +
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">' +
